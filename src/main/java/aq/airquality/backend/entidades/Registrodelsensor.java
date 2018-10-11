@@ -66,5 +66,4 @@ public class Registrodelsensor implements Serializable{
 		this.co2 = co2;
 	}
 	
-	
 }

@@ -1,4 +1,4 @@
-package aq.airquality.backend.servicios;
+package aq.airquality.backend.servicios.RegistroUsuarios;
 
 import java.util.List;
 
@@ -10,7 +10,5 @@ public interface UsuariosService {
 	public Usuarios saveUsuariosService(Usuarios usuarios);
 	
 	public List<Usuarios> allusers();
-	
-	public Usuarios getUsuario(Long id);
 
 }

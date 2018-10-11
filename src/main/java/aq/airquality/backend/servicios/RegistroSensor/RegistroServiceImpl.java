@@ -1,5 +1,7 @@
 package aq.airquality.backend.servicios.RegistroSensor;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,11 @@ public class RegistroServiceImpl implements RegistroService{
 	@Override
 	public Registrodelsensor saveRegistroService(Registrodelsensor registrodelsensor) {
 		return registroService.save(registrodelsensor);
+	}
+
+	@Override
+	public List<Registrodelsensor> allregistros() {
+		return registroService.findAll();
 	}
 
 }

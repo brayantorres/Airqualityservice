@@ -7,14 +7,13 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import aq.airquality.backend.entidades.Usuarios;
-import aq.airquality.backend.servicios.UsuariosService;
+import aq.airquality.backend.servicios.RegistroUsuarios.UsuariosService;
 
 @RestController
 public class UsuariosControlador {
@@ -37,12 +36,5 @@ public class UsuariosControlador {
 	@GetMapping("traer/usuarios")
 	public List<Usuarios> allusers() {
 		return usuariosService.allusers();
-	}
-	
-	@GetMapping("traer/usuario/by/{id}")
-	public Usuarios getUsuario(@PathVariable(value="id") Long id) {
-		System.out.println("******************************************");
-		System.out.println(id);
-		return usuariosService.getUsuario(id);
 	}
 }

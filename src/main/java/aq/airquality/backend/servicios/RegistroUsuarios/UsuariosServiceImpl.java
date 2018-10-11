@@ -1,4 +1,4 @@
-package aq.airquality.backend.servicios;
+package aq.airquality.backend.servicios.RegistroUsuarios;
 
 import java.util.List;
 
@@ -25,10 +25,4 @@ public class UsuariosServiceImpl implements UsuariosService {
 	public List<Usuarios> allusers() {
 		return usuariosRepository.findAll();
 	}
-
-	@Override
-	public Usuarios getUsuario(Long id) {
-		return usuariosRepository.getOne(id);
-	}
-
 }
