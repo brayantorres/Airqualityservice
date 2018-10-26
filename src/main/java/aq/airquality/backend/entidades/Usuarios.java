@@ -23,7 +23,7 @@ public class Usuarios implements Serializable {
 	private int peso;
 	private Double imc;
 	private int cantidaddepasos;
-	private int horasdesueño;
+	private int horasdesuenio;
 
 	public int getId() {
 		return id;
@@ -73,12 +73,12 @@ public class Usuarios implements Serializable {
 		this.cantidaddepasos = cantidaddepasos;
 	}
 
-	public int getHorasdesueño() {
-		return horasdesueño;
+	public int getHorasdesuenio() {
+		return horasdesuenio;
 	}
 
-	public void setHorasdesueño(int horasdesueño) {
-		this.horasdesueño = horasdesueño;
+	public void setHorasdesuenio(int horasdesuenio) {
+		this.horasdesuenio = horasdesuenio;
 	}
 
 }
